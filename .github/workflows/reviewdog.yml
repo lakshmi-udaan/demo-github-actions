@@ -17,3 +17,10 @@ jobs:
         uses: DominuS-RU/Detekt-Action@v1.16.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          reviewdog_level: warning
+          reviewdog_filter: diff_context
+          reviewdog_reporter: github-check
+          detekt_config: default-detekt-config.yml
+          detekt_excludes: "**/build/**,**/.idea/**"
+          fail_on_error: false
+
