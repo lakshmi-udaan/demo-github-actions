@@ -1,3 +1,4 @@
+#{$projectRoot}/default-detekt-config.yml
 build:
   maxIssues: 0
   excludeCorrectable: false
