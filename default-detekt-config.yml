@@ -487,8 +487,6 @@ potential-bugs:
     active: false
   DontDowncastCollectionTypes:
     active: false
-  DoubleMutabilityForCollection:
-    active: false
   DuplicateCaseInWhenExpression:
     active: true
   EqualsAlwaysReturnsTrueOrFalse:
