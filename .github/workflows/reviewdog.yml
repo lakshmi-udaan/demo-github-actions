@@ -16,4 +16,4 @@ jobs:
       - name: detekt
         uses: DominuS-RU/Detekt-Action@v1.16.0
         with:
-          github_token: ${{ secrets.REVIEWDOG_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
