@@ -58,8 +58,6 @@ comments:
     active: false
   CommentOverPrivateProperty:
     active: false
-  DeprecatedBlockTag:
-    active: false
   EndOfSentenceFormat:
     active: false
     endOfSentenceFormat: '([.?!][ \t\n\r\f<])|([.?!:]$)'
