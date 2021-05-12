@@ -14,7 +14,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: detekt
-        uses: DominuS-RU/Detekt-Action@v1.16.0
+        uses: lakshmi-udaan/replicate-udaan-linters@v0.4.test
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reviewdog_level: error
