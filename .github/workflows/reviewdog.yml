@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
 
       - name: detekt
-        uses: lakshmi-udaan/replicate-udaan-linters@v0.4.test
+        uses: lakshmi-udaan/replicate-udaan-linters@v0.5.test
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reviewdog_level: error
