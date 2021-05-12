@@ -17,7 +17,7 @@ jobs:
         uses: DominuS-RU/Detekt-Action@v1.16.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reviewdog_level: error
+          reviewdog_level: info
           reviewdog_filter: added
           reviewdog_reporter: github-check
           detekt_config: default-detekt-config.yml
