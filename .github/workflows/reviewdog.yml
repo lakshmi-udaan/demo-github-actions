@@ -1,17 +1,21 @@
-name: reviewdog
-on: [pull_request]
+name: Linters Action
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
 
 jobs:
-  detekt:
-    name: Check Code Quality
+  linting_detekt:
+    if: github.event.pull_request.draft == false
+    name: Linters Detekt
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clone repo
+      # checkout this repo
+      - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          fetch-depth: 1
-          ref: ${{ github.head_ref }}
+          fetch-depth: 0
 
       - name: detekt
         uses: lakshmi-udaan/replicate-udaan-linters@v0.4.test
@@ -19,7 +23,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reviewdog_level: error
           reviewdog_filter: added
-          reviewdog_reporter: github-check
+          reviewdog_reporter: github-pr-check
           detekt_config: default-detekt-config.yml
           detekt_excludes: "**/build/**,**/.idea/**"
           fail_on_error: false
