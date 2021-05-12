@@ -31,8 +31,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reviewdog_reporter: github-pr-check
           detekt_config: default-detekt-config.yml
-          detekt_excludes: "**/build/**,**/.idea/**"
           fail_on_error: false
 
