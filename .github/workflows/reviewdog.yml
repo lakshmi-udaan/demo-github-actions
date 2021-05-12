@@ -16,10 +16,15 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
-      - name: detekt
-        uses: lakshmi-udaan/replicate-udaan-linters@v0.5.test
+      # checkout the private repo containing the action to run
+      - name: Checkout GitHub Action Repo
+        uses: actions/checkout@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          repository: lakshmi-udaan/replicate-udaan-linters
+          ref: v0.5.test
+          path: action.yml
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reviewdog_level: error
           reviewdog_filter: added
@@ -27,4 +32,8 @@ jobs:
           detekt_config: default-detekt-config.yml
           detekt_excludes: "**/build/**,**/.idea/**"
           fail_on_error: false
+      - name: Run My Action
+        uses: ./action.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
