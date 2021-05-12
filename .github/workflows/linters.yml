@@ -21,8 +21,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          repository: udaan-com/linters
-          ref: v0.4.test
+          repository: lakshmi-udaan/replicate-udaan-linters
+          ref: v0.test
+          token: ${{ secrets.GITHUB_TOKEN }}
           path: action.yml
       - name: Run My Action
         uses: ./action.yml
