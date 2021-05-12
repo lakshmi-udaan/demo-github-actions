@@ -14,12 +14,12 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: detekt
-        uses: lakshmi-udaan/replicate-udaan-linters@v0.4.test
+        uses: lakshmi-udaan/replicate-udaan-linters@v0.5.test
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reviewdog_level: error
           reviewdog_filter: added
-          reviewdog_reporter: github-check
+          reviewdog_reporter: github-pr-check
           detekt_config: default-detekt-config.yml
           detekt_excludes: "**/build/**,**/.idea/**"
           fail_on_error: false
