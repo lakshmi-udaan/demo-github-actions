@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           repository: lakshmi-udaan/replicate-udaan-linters
-          ref: v0.8.test
+          ref: v0.9.test
           path: action.yml
       - name: Run My Action
         uses: ./action.yml
