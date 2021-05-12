@@ -23,7 +23,7 @@ jobs:
         with:
           repository: udaan-com/linters
           ref: v0.4.test
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ github.token }}
           path: action.yml
       - name: Run My Action
         uses: ./action.yml
