@@ -22,7 +22,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          repository: udaan-com/linters
+          repository: lakshmi-udaan/replicate-udaan-linters
           ref: v1.1.test
           token: ${{ secrets.REPLICA_LINTERS_TOKEN }}
           path: action.yml
