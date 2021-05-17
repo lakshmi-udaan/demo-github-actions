@@ -1,6 +1,6 @@
 package ch02.ex1_2_Functions
 
-fun max(a: Int, b: Int): Int {
+fun max(a: Int,b: Int): Int {
     return if (a > b) a else b
 }
 
