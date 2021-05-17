@@ -10,4 +10,6 @@ fun main(args: Array<String>) {
     println("The oldest is: $oldest")
 }
 
+data class AnotherPerson(val name: String,val age: Int? = null)
+
 // The oldest is: Person(name=Bob, age=29)
