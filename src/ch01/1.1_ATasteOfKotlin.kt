@@ -10,8 +10,8 @@ fun main(args: Array<String>) {
     println("The oldest is: $oldest")
 }
 /**
- * @param name The property is documented
+ * @property name The property is documented
  */
-data class AnotherPerson(val name: String, val age: Int? = null, val anotherParam: String)
+data class AnotherPerson(val name: String,val age: Int? = null,val anotherParam: String)
 
 // The oldest is: Person(name=Bob, age=29)
