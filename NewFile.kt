@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
             "Alice"
         ),
         Person(
-            "Bob", 
+            "Bob",
             age = 29
         )
     )
