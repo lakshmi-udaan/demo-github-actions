@@ -34,5 +34,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reviewdog_reporter: github-pr-review
           reviewdog_level: error
-          fail-on-error: true
+          fail_on_error: true
 
