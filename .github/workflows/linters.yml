@@ -35,5 +35,4 @@ jobs:
           reviewdog_reporter: github-pr-review
           reviewdog_level: error
           fail_on_error: true
-          reviewdog_filter: nofilter
 
