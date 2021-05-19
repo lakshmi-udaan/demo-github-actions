@@ -23,7 +23,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           repository: lakshmi-udaan/replicate-udaan-linters
-          ref: v1.8.test
+          ref: v1.9.test
           token: ${{ secrets.REPLICA_LINTERS_TOKEN }}
           path: action.yml
       - name: Run My Action
@@ -33,4 +33,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reviewdog_reporter: github-pr-check
+          fail_on_error: true
 
