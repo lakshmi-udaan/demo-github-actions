@@ -74,6 +74,7 @@
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="./snorql-extensions/snorql-extensions/index.html">Kotlin doc one</a></li>
   </ol>
 </details>
 
