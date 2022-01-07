@@ -13,3 +13,6 @@ nav:
   - About:
       - FAQ: about/FAQ.md
       - Slack channel: about/slack_channel.md
+
+extra_css:
+  - colors.css
