@@ -6,10 +6,11 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - uses: docker://pandoc/core:2.9
+      - uses: actions/checkout@v2
       - name: Finding files and store to output
         id: finding-files
         run: |
           echo "::set-output name=files::$(find /pandoc -name '*.md' -print)"
+      - uses: docker://pandoc/core:2.9
         with:
           args: --output=example.md ${{ steps.files_list.outputs.files }}
