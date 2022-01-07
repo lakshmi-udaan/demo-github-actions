@@ -1,0 +1,1 @@
+cat ./pandoc/*.md > sample.md
