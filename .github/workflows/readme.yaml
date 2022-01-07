@@ -14,4 +14,4 @@ jobs:
         working-directory: pandoc
       - uses: docker://pandoc/core:2.16.2
         with:
-          args: --output=example.md ${{ steps.finding-files.outputs.files }}
+          args: "--output=example.md pandoc/one.md pandoc/two.md"
