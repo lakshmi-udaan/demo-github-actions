@@ -1,1 +1,15 @@
 site_name: My Docs
+
+nav:
+  - Home: index.md
+  - User guide:
+      - Introduction: user_guide/introduction.md
+      - SnorqlExtensionsDoc: doc/docs/snorql-extensions/index.html
+      - Maven: user_guide/maven/usage.md
+      - Command line: user_guide/cli/usage.md
+      - Html frontend: user_guide/base-specific/frontend.md
+      - Versioning: user_guide/versioning/versioning.md
+      - Android plugin: user_guide/android-plugin/android-plugin.md
+  - About:
+      - FAQ: about/FAQ.md
+      - Slack channel: about/slack_channel.md
