@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat ./pandoc/*.md > sample.md
+cat ./pandoc/*.md > result.md
