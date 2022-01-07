@@ -7,5 +7,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: docker://pandoc/core:2.9
+      - name: Finding files and store to output
+        id: finding-files
+        run: |
+          echo "::set-output name=files::$(find /pandoc -name '*.md' -print)"
         with:
-          args: "https://github.com/lakshmi-udaan/demo-github-actions/tree/main/pandoc/*.md > sample.md" # gets appended to pandoc command
+          args: --output=example.md ${{ steps.files_list.outputs.files }}
