@@ -1,11 +1,7 @@
-<div id="top"></div>
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
 *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]][contributors-url]
@@ -14,6 +10,26 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-url]: https://github.com/udaan-com/snorql/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/udaan-com/repo_name.svg?style=for-the-badge
+[forks-url]: https://github.com/udaan-com/snorql/network/members
+[stars-shield]: https://img.shields.io/github/stars/udaan-com/repo_name.svg?style=for-the-badge
+[stars-url]: https://github.com/udaan-com/snorql/stargazers
+[issues-shield]: https://img.shields.io/github/issues/udaan-com/repo_name.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/snorql/issues
+[license-shield]: https://img.shields.io/github/license/udaan-com/repo_name.svg?style=for-the-badge
+[license-url]: https://github.com/udaan-com/snorql/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://in.linkedin.com/company/udaan
+[product-screenshot]: images/screenshot.png
+
+<div id="top"></div>
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -36,12 +52,9 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
+<summary>Table of Contents</summary>
+<ol>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
@@ -70,16 +83,12 @@
         <li><a href="#snorql-extension-kdocs">snorql-extension KDocs</a></li>
       </ul>
     </li>
-    <li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
+</ol>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -121,8 +130,6 @@ You can also add your own metrics by following the instructions below under [Bui
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -156,13 +163,8 @@ This is an example of how to list things you need to use the software and how to
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-For more examples, please refer to the [Documentation](https://example.com)
 
 ### How to integrate snorql in your project
 
@@ -231,6 +233,8 @@ fun getActiveQueryMetric(
   }
 }
 ```
+
+
 ### Enable snorql-extensions in your project (optional)
 
 Pre-requisites: [How to integrate snorql in your project](#how-to-integrate-snorql-in-your-project)
@@ -248,6 +252,7 @@ fun registerSQLMetrics() {
     SQLCommonMetrics.initialize()
 }
 ```
+
 
 ## Build your own custom metrics using snorql
 
@@ -349,11 +354,11 @@ Note: Add the above code(step 7) during the start of your application.
 Please find the detailed KDoc for snorql-framework [here](snorql-framework/snorql-framework/index.html).
 
 ### snorql-extensions KDocs
-Please find the detailed KDoc for snorql-framework [here](snorql-extensions/snorql-extensions/index.html).
-
-Distributed under the Apache License. See `LICENSE` for more information.
+Please find the detailed KDoc for snorql-framework [here](https://github.com/lakshmi-udaan/demo-github-actions/blob/main/doc/docs/snorql-extensions/snorql-extensions/index.html).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -366,7 +371,6 @@ Distributed under the Apache License. See `LICENSE` for more information.
 See the [open issues](https://github.com/udaan-com/snorql/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -385,16 +389,12 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the Apache License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
@@ -406,7 +406,6 @@ Project Link: [https://github.com/udaan-com/snorql](https://github.com/udaan-com
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
@@ -416,20 +415,3 @@ Project Link: [https://github.com/udaan-com/snorql](https://github.com/udaan-com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/udaan-com/snorql/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/udaan-com/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/udaan-com/snorql/network/members
-[stars-shield]: https://img.shields.io/github/stars/udaan-com/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/udaan-com/snorql/stargazers
-[issues-shield]: https://img.shields.io/github/issues/udaan-com/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/snorql/issues
-[license-shield]: https://img.shields.io/github/license/udaan-com/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/udaan-com/snorql/blob/main/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://in.linkedin.com/company/udaan
-[product-screenshot]: images/screenshot.png
