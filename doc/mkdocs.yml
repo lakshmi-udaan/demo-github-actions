@@ -9,7 +9,7 @@ theme:
       link: 'https://github.com/udaan-com/snorql'
 
 nav:
-  - Home: sections/title.md
+  - Home: index.md
   - About the project: sections/about.md
   - Getting Started: sections/getting-started.md
   - Usage:
