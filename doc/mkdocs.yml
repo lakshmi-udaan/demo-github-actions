@@ -1,18 +1,27 @@
-site_name: My Docs
+site_name: snorql
+
+# Material theme
+theme:
+  name: 'material'
+  favicon: 🪀
+  social:
+    - type: 'github'
+      link: 'https://github.com/udaan-com/snorql'
 
 nav:
-  - Home: index.md
-  - User guide:
-      - Introduction: user_guide/introduction.md
-      - SnorqlExtensionsDoc: snorql-extensions/snorql-extensions/index.html
-      - Maven: user_guide/maven/usage.md
-      - Command line: user_guide/cli/usage.md
-      - Html frontend: user_guide/base-specific/frontend.md
-      - Versioning: user_guide/versioning/versioning.md
-      - Android plugin: user_guide/android-plugin/android-plugin.md
-  - About:
-      - FAQ: about/FAQ.md
-      - Slack channel: about/slack_channel.md
+  - Home: sections/title.md
+  - About the project: sections/about.md
+  - Getting Started: sections/getting-started.md
+  - Usage:
+      - How to integrate snorql in your project: sections/integrate-snorql-to-project.md
+      - Enable snorql-extensions in your project: sections/enable-snorql-extensions.md
+      - Build your own custom metrics using snorql: sections/buils-custom-metrics.md
+  - Kotlin Documentation: sections/kotlin-documentation.md
+  - Roadmap: sections/roadmap.md
+  - Contributing: ../../CONTRIBUTING.md
+  - License: sections/license-details.md.md
+  - Contact: sections/contact.md
+  - Acknowledgments: sections/acknowledgements.md
 
 extra_css:
   - colors.css
