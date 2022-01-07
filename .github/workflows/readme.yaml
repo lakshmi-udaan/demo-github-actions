@@ -13,4 +13,4 @@ jobs:
           echo "::set-output name=files::$(find /pandoc -name '*.md' -print)"
       - uses: docker://pandoc/core:2.16.2
         with:
-          args: --output=example.md ${{ steps.files_list.outputs.files }}
+          args: --output=example.md /pandoc/one.md /pandoc/two.md
