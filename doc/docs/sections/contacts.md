@@ -1,5 +1,3 @@
-<!-- CONTACT -->
-## Contact
 
 udaan.com - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 

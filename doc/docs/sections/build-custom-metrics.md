@@ -1,6 +1,4 @@
 
-## Build your own custom metrics using snorql
-
 Let's see how we can build your own custom metric using `snorql-framework` in just 7 simple steps
 
 1. Add a new json object for your metric to `sql-monitoring-conf.json`

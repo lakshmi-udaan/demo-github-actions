@@ -52,6 +52,7 @@
   </p>
 </div>
 
+
 <!-- TABLE OF CONTENTS -->
 <summary>Table of Contents</summary>
 <ol>
@@ -92,6 +93,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
 SNORQL comes with two modules
 
 - snorql-framework
@@ -162,10 +164,8 @@ This is an example of how to list things you need to use the software and how to
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
-
 ### How to integrate snorql in your project
 
 #### 1. Implement Connection Interface
@@ -234,7 +234,6 @@ fun getActiveQueryMetric(
 }
 ```
 
-
 ### Enable snorql-extensions in your project (optional)
 
 Pre-requisites: [How to integrate snorql in your project](#how-to-integrate-snorql-in-your-project)
@@ -252,7 +251,6 @@ fun registerSQLMetrics() {
     SQLCommonMetrics.initialize()
 }
 ```
-
 
 ## Build your own custom metrics using snorql
 
@@ -346,7 +344,6 @@ Note: Add the above code(step 7) during the start of your application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 <!-- KOTLIN DOCUMENTATION -->
 ## Kotlin Documentation
 
@@ -354,10 +351,9 @@ Note: Add the above code(step 7) during the start of your application.
 Please find the detailed KDoc for snorql-framework [here](snorql-framework/snorql-framework/index.html).
 
 ### snorql-extensions KDocs
-Please find the detailed KDoc for snorql-framework [here](https://github.com/lakshmi-udaan/demo-github-actions/blob/main/doc/docs/snorql-extensions/snorql-extensions/index.html).
+Please find the detailed KDoc for snorql-framework [here](../snorql-extensions/snorql-extensions/index.html).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ROADMAP -->
@@ -371,7 +367,6 @@ Please find the detailed KDoc for snorql-framework [here](https://github.com/lak
 See the [open issues](https://github.com/udaan-com/snorql/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -404,7 +399,6 @@ udaan.com - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_
 Project Link: [https://github.com/udaan-com/snorql](https://github.com/udaan-com/snorql)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments

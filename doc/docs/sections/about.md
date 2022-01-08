@@ -1,5 +1,4 @@
-<!-- ABOUT THE PROJECT -->
-## About The Project
+
 SNORQL comes with two modules
 
 - snorql-framework

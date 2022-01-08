@@ -1,9 +1,4 @@
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-### How to integrate snorql in your project
-
 #### 1. Implement Connection Interface
 
 ```kotlin

@@ -1,7 +1,4 @@
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
 * []()
 * []()
 * []()
