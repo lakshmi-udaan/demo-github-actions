@@ -19,7 +19,7 @@
       <a href="#usage">Usage</a>
       <ul>
         <li><a href="#how-to-integrate-snorql-in-your-project">How to integrate snorql in your project</a></li>
-        <li><a href="#enable-snorql-extensions-in-your-project">Enable snorql-extensions in your project</a></li>
+        <li><a href="#enable-snorql-extensions-in-your-project-optional">Enable snorql-extensions in your project</a></li>
         <li><a href="#build-your-own-custom-metrics-using-snorql">Build your own custom metrics using snorql</a></li>
       </ul>
     </li>
