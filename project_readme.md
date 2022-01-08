@@ -234,7 +234,7 @@ fun getActiveQueryMetric(
 }
 ```
 
-### Enable snorql-extensions in your project (optional)
+### Enable 'snorql-extensions' in your project (optional)
 
 Pre-requisites: [How to integrate snorql in your project](#how-to-integrate-snorql-in-your-project)
 
