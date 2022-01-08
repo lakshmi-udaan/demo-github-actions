@@ -20,7 +20,7 @@ echo "## Usage" >> ${OUTPUT_DIR}
 echo "### How to integrate snorql in your project" >> ${OUTPUT_DIR}
 cat ./integrate-snorql-to-project.md >> ${OUTPUT_DIR}
 
-echo "### Enable snorql-extensions in your project (optional)" >> ${OUTPUT_DIR}
+echo "### Enable 'snorql-extensions' in your project (optional)" >> ${OUTPUT_DIR}
 cat ./enable-snorql-extensions.md >> ${OUTPUT_DIR}
 
 echo "## Build your own custom metrics using snorql" >> ${OUTPUT_DIR}
