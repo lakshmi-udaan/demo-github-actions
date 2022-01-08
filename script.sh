@@ -28,7 +28,7 @@ cat ./build-custom-metrics.md >> ${OUTPUT_DIR}
 
 echo "<!-- KOTLIN DOCUMENTATION -->" >> ${OUTPUT_DIR}
 echo "## Kotlin Documentation" >> ${OUTPUT_DIR}
-cat ./kotlin-documentation.md >> ${OUTPUT_DIR}
+cat ./kotlin-doc-for-readme.md >> ${OUTPUT_DIR}
 
 echo "<!-- ROADMAP -->" >> ${OUTPUT_DIR}
 echo "## Roadmap" >> ${OUTPUT_DIR}
@@ -49,6 +49,4 @@ cat ./contacts.md >> ${OUTPUT_DIR}
 echo "<!-- ACKNOWLEDGMENTS -->" >> ${OUTPUT_DIR}
 echo "## Acknowledgments" >> ${OUTPUT_DIR}
 cat ./acknowledgements.md >> ${OUTPUT_DIR}
-#cat ./badges.md ./title.md ./contents.md ./about.md ./getting-started.md ./integrate-snorql-to-project.md \
-#./enable-snorql-extensions.md ./build-custom-metrics.md ./kotlin-documentation.md ./roadmap.md \
-#../../../CONTRIBUTING.md ./license-details.md ./contacts.md ./acknowledgements.md > ../../../result.md
+

@@ -16,7 +16,7 @@ nav:
       - How to integrate snorql in your project: sections/integrate-snorql-to-project.md
       - Enable snorql-extensions in your project: sections/enable-snorql-extensions.md
       - Build your own custom metrics using snorql: sections/build-custom-metrics.md
-  - Kotlin Documentation: sections/kotlin-documentation.md
+  - Kotlin Documentation: sections/kotlin-doc-for-website.md
   - Roadmap: sections/roadmap.md
   - Contributing: ../CONTRIBUTING.md
   - License: sections/license-details.md

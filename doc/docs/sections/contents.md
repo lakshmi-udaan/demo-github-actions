@@ -1,6 +1,6 @@
 
 <!-- TABLE OF CONTENTS -->
-<summary>Table of Contents</summary>
+## Table of Contents
 <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -24,10 +24,10 @@
       </ul>
     </li>
     <li>
-      <a href="#kotin-documentation">Kotlin Documentation</a>
+      <a href="#kotlin-documentation">Kotlin Documentation</a>
       <ul>
         <li><a href="#snorql-framework-kdocs">snorql-framework KDocs</a></li>
-        <li><a href="#snorql-extension-kdocs">snorql-extension KDocs</a></li>
+        <li><a href="#snorql-extensions-kdocs">snorql-extension KDocs</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
