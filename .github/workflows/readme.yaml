@@ -10,7 +10,7 @@ jobs:
       - name: Run script file
         run: |
           chmod +x ./doc/populate-readme.sh
-          ./script.sh
+          ./doc/populate-readme.sh
         shell: bash
       - name: Current branch name
         run: echo running on branch ${GITHUB_REF##*/}
