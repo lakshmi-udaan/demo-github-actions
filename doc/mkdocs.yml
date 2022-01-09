@@ -10,8 +10,7 @@ theme:
 
 nav:
   - Home: index.md
-  - About the project: sections/about.md
-  - Getting Started: sections/getting-started.md
+  - About the project: sections/about-ghp.md
   - Usage:
       - How to integrate snorql in your project: sections/integrate-snorql-to-project.md
       - Enable snorql-extensions in your project: sections/enable-snorql-extensions.md

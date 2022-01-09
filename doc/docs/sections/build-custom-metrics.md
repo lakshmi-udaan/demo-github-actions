@@ -83,6 +83,6 @@ Step8. Finally, Register your Metric to the `SqlMetricManager`
 SqlMetricManager
     .addMetric(<MetricCategoryEnums>.<METRIC>.getId(), <MetricEnumName>())
 ```
-Note: Add the above code(step 7) during the start of your application.
+Note: Add the above code(Step8) during the start of your application.
 
 

@@ -1,5 +1,21 @@
 
-#### 1. Implement Connection Interface
+#### Add this library as a dependency:
+  ```xml
+  <dependency>
+    <groupId>com.udaan.snorql</groupId>
+    <artifactId>snorql-framework</artifactId>
+    <version>${versions.snorql-framework}</version>
+  </dependency>
+  ```
+
+#### Add this these `properties` to your parent `pom`:
+```xml
+    <properties>
+        <versions.snorql-framework>[1.0,2.0)</versions.snorql-framework>
+    </properties>
+```
+
+#### Implement Connection Interface
 
 ```kotlin
 @Singleton
@@ -41,7 +57,7 @@ class SQlServerConnection constructor(private val jdbi3Factory: Jdbi3Factory) : 
 }
 ```
 
-#### 2. Generate the metric response
+#### Generate the metric response
 
 Make a call to `<SqlMetricManager.getMetric()>` with appropriate input to get the result.
 

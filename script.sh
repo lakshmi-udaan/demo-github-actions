@@ -9,11 +9,7 @@ cat ./contents.md >> ${OUTPUT_DIR}
 
 echo "<!-- ABOUT THE PROJECT -->" >> ${OUTPUT_DIR}
 echo "## About The Project" >> ${OUTPUT_DIR}
-cat ./about.md >> ${OUTPUT_DIR}
-
-echo "<!-- GETTING STARTED -->" >> ${OUTPUT_DIR}
-echo "## Getting Started" >> ${OUTPUT_DIR}
-cat ./getting-started.md >> ${OUTPUT_DIR}
+cat ./about-readme.md >> ${OUTPUT_DIR}
 
 echo "<!-- USAGE EXAMPLES -->" >> ${OUTPUT_DIR}
 echo "## Usage" >> ${OUTPUT_DIR}
