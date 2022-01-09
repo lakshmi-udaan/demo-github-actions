@@ -1,6 +1,9 @@
 name: Readme
 
-on: push
+on:
+  push:
+    paths:
+      - 'doc/**'
 
 jobs:
   generate-readme:
@@ -12,9 +15,11 @@ jobs:
           chmod +x ./doc/populate-readme.sh
           ./doc/populate-readme.sh
         shell: bash
-      - name: Current branch name
-        run: echo running on branch ${GITHUB_REF##*/}
+      - name: Get the current branch name
+        shell: bash
+        run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
+        id: currentref
       - uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: ${GITHUB_REF##*/}
+          BRANCH_NAME: ${{ steps.currentref.outputs.branch }}
