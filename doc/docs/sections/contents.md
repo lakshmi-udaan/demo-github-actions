@@ -9,13 +9,6 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li>
       <a href="#usage">Usage</a>
       <ul>
         <li><a href="#how-to-integrate-snorql-in-your-project">How to integrate snorql in your project</a></li>
