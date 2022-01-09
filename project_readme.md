@@ -14,15 +14,15 @@
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/udaan-com/snorql.svg?style=for-the-badge
 [contributors-url]: https://github.com/udaan-com/snorql/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/udaan-com/repo_name.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/udaan-com/snorql.svg?style=for-the-badge
 [forks-url]: https://github.com/udaan-com/snorql/network/members
-[stars-shield]: https://img.shields.io/github/stars/udaan-com/repo_name.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/udaan-com/snorql.svg?style=for-the-badge
 [stars-url]: https://github.com/udaan-com/snorql/stargazers
-[issues-shield]: https://img.shields.io/github/issues/udaan-com/repo_name.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/udaan-com/snorql.svg?style=for-the-badge
 [issues-url]: https://github.com/github_username/snorql/issues
-[license-shield]: https://img.shields.io/github/license/udaan-com/repo_name.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/udaan-com/snorql.svg?style=for-the-badge
 [license-url]: https://github.com/udaan-com/snorql/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://in.linkedin.com/company/udaan
@@ -41,7 +41,7 @@
   <p align="center">
     snorql a.k.a. SQL-Monitoring is an open-source, free-to-use project developed at Udaan aimed at diagnosing & resolving common database-related problems using SQL metrics.
     <br />
-    <a href="https://github.com/udaan-com/snorql"><strong>Explore the docs »</strong></a>
+    <a href="https://lakshmi-udaan.github.io/demo-github-actions/sections/about/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/udaan-com/snorql">View Demo</a>
@@ -132,43 +132,27 @@ You can also add your own metrics by following the instructions below under [Bui
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 ### How to integrate snorql in your project
 
-#### 1. Implement Connection Interface
+#### Add this library as a dependency:
+  ```xml
+  <dependency>
+    <groupId>com.udaan.snorql</groupId>
+    <artifactId>snorql-framework</artifactId>
+    <version>${versions.snorql-framework}</version>
+  </dependency>
+  ```
+
+#### Add this these `properties` to your parent `pom`:
+```xml
+    <properties>
+        <versions.snorql-framework>[1.0,2.0)</versions.snorql-framework>
+    </properties>
+```
+
+#### Implement Connection Interface
 
 ```kotlin
 @Singleton
@@ -210,7 +194,7 @@ class SQlServerConnection constructor(private val jdbi3Factory: Jdbi3Factory) : 
 }
 ```
 
-#### 2. Generate the metric response
+#### Generate the metric response
 
 Make a call to `<SqlMetricManager.getMetric()>` with appropriate input to get the result.
 
@@ -237,6 +221,22 @@ fun getActiveQueryMetric(
 ### Enable 'snorql-extensions' in your project (optional)
 
 Pre-requisites: [How to integrate snorql in your project](#how-to-integrate-snorql-in-your-project)
+
+#### Add this library as a dependency:
+  ```xml
+  <dependency>
+    <groupId>com.udaan.snorql</groupId>
+    <artifactId>snorql-extensions</artifactId>
+    <version>${versions.snorql-extensions}</version>
+  </dependency>
+  ```
+
+#### Add this these `properties` to your parent `pom`:
+```xml
+    <properties>
+        <versions.snorql-extensions>[1.0,2.0)</versions.snorql-extensions>
+    </properties>
+```
 
 #### Initialize `SQLCommonMetrics`
 
@@ -338,7 +338,7 @@ Step8. Finally, Register your Metric to the `SqlMetricManager`
 SqlMetricManager
     .addMetric(<MetricCategoryEnums>.<METRIC>.getId(), <MetricEnumName>())
 ```
-Note: Add the above code(step 7) during the start of your application.
+Note: Add the above code(Step8) during the start of your application.
 
 
 
