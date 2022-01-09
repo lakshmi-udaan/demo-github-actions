@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd docs/sections/ || exit
+cd ./doc/docs/sections/ || exit
 OUTPUT_DIR="../../../project_readme.md"
 
 cat ./badges.md > ${OUTPUT_DIR}
