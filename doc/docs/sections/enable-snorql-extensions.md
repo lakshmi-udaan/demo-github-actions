@@ -2,13 +2,13 @@
 Pre-requisites: [How to integrate snorql in your project](#how-to-integrate-snorql-in-your-project)
 
 #### Add this library as a dependency:
-  ```xml
-  <dependency>
-    <groupId>com.udaan.snorql</groupId>
-    <artifactId>snorql-extensions</artifactId>
-    <version>${versions.snorql-extensions}</version>
-  </dependency>
-  ```
+```xml
+    <dependency>
+        <groupId>com.udaan.snorql</groupId>
+        <artifactId>snorql-extensions</artifactId>
+        <version>${versions.snorql-extensions}</version>
+    </dependency>
+```
 
 #### Add this these `properties` to your parent `pom`:
 ```xml

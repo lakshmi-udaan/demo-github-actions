@@ -1,12 +1,12 @@
 
 #### Add this library as a dependency:
-  ```xml
-  <dependency>
-    <groupId>com.udaan.snorql</groupId>
-    <artifactId>snorql-framework</artifactId>
-    <version>${versions.snorql-framework}</version>
-  </dependency>
-  ```
+```xml
+    <dependency>
+        <groupId>com.udaan.snorql</groupId>
+        <artifactId>snorql-framework</artifactId>
+        <version>${versions.snorql-framework}</version>
+    </dependency>
+```
 
 #### Add this these `properties` to your parent `pom`:
 ```xml

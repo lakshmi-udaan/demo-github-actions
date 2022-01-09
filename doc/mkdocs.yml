@@ -20,7 +20,7 @@ nav:
   - Roadmap: sections/roadmap.md
   - Contributing: ../CONTRIBUTING.md
   - License: sections/license-details.md
-  - Contact: sections/contact.md
+  - Contact: sections/contacts.md
   - Acknowledgments: sections/acknowledgements.md
 
 extra_css:
