@@ -12,7 +12,7 @@ repo_url: https://github.com/udaan-com/snorql
 # Material theme
 theme:
   name: 'material'
-  favicon: 🪀
+  favicon: favicon.svg
   social:
     - type: 'github'
       link: 'https://github.com/udaan-com/snorql'
@@ -24,7 +24,6 @@ nav:
       - How to integrate snorql in your project: sections/integrate-snorql-to-project.md
       - Enable snorql-extensions in your project: sections/enable-snorql-extensions/ghp.md
       - Build your own custom metrics using snorql: sections/build-custom-metrics.md
-      - Example to create your first custom metric: https://github.com/udaan-com/snorql/blob/main/snorql-extensions/README.md
   - Kotlin Documentation: sections/kotlin-doc/ghp.md
   - Roadmap: sections/roadmap.md
   - License: sections/license-details.md
