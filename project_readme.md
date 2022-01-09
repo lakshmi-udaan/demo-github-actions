@@ -41,7 +41,7 @@
   <p align="center">
     snorql a.k.a. SQL-Monitoring is an open-source, free-to-use project developed at Udaan aimed at diagnosing & resolving common database-related problems using SQL metrics.
     <br />
-    <a href="https://lakshmi-udaan.github.io/demo-github-actions/sections/about-ghp/"><strong>Explore the docs »</strong></a>
+    <a href="https://lakshmi-udaan.github.io/demo-github-actions/sections/about/ghp/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/udaan-com/snorql">View Demo</a>
