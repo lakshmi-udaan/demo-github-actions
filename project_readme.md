@@ -254,9 +254,9 @@ fun registerSQLMetrics() {
 
 ## Build your own custom metrics using snorql
 
-Let's see how we can build your own custom metric using `snorql-framework` in just 7 simple steps
+Let's see how we can build your own custom metric using `snorql-framework` in just 8 simple steps
 
-1. Add a new json object for your metric to `sql-monitoring-conf.json`
+Step1. Add a new json object for your metric to `sql-monitoring-conf.json`
 
 ```json
 "<metricName>": {
@@ -269,7 +269,7 @@ Let's see how we can build your own custom metric using `snorql-framework` in ju
   }
 ```
 
-2. Create a `new enum member` for your Metric in the Enum Class
+Step2. Create a `new enum member` for your Metric in the Enum Class
 
 ```kotlin
 enum class <MetricEnum>(private val metricId:String):IMtericId {
@@ -280,7 +280,7 @@ enum class <MetricEnum>(private val metricId:String):IMtericId {
 }
 ```
 
-3. Create a  `MetricDTOClass`
+Step3. Create a  `MetricDTOClass`
 
 ```kotlin
 data class <MetricDTO> (
@@ -288,7 +288,7 @@ data class <MetricDTO> (
 )
 ```
 
-4. Create new `MetricInputClass`
+Step4. Create new `MetricInputClass`
 
 ```kotlin
 data class <MetricInput>(
@@ -297,13 +297,13 @@ data class <MetricInput>(
 ) : MetricInput()
 ```
 
-5. Create a `MetricResultClass`
+Step5. Create a `MetricResultClass`
 
 ```kotlin
 data class <MetricResult>(val queryList: List<MetricDTO>) : IMetricResult()
 ```
 
-6. Create a `MetricRecommendationClass`(optional: Only if your metric supports recommendation)
+Step6. Create a `MetricRecommendationClass`(optional: Only if your metric supports recommendation)
 
 ```kotlin
 data class <MetricRecommendation>(val queryList: List<MetricDTO>) : IMetricRecommendation()
@@ -311,7 +311,7 @@ data class <MetricRecommendation>(val queryList: List<MetricDTO>) : IMetricRecom
 
 Now that we have created our model classes, we can use them to implement our metric
 
-7. Create a `MetricClass`
+Step7. Create a `MetricClass`
 
 ```kotlin
 class <Metric>: IMetric<T, R, IMetricRecommendation>{
@@ -332,7 +332,7 @@ class <Metric>: IMetric<T, R, IMetricRecommendation>{
 }
 ```
 
-7. Finally, Register your Metric to the `SqlMetricManager`
+Step8. Finally, Register your Metric to the `SqlMetricManager`
 
 ```kotlin
 SqlMetricManager
