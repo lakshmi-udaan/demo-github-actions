@@ -20,9 +20,9 @@ theme:
 nav:
   - Home: index.md
   - About the project: sections/about-ghp.md
-  - Checking:
+  - Checking: ../
       - First path: dummy.md
-      - Second path: ../dummy2.md
+      - Second path: ../dummy.md
   - Usage:
       - How to integrate snorql in your project: sections/integrate-snorql-to-project.md
       - Enable snorql-extensions in your project: sections/enable-snorql-extensions.md
