@@ -25,6 +25,7 @@ cat ./enable-snorql-extensions.md >> ${OUTPUT_DIR}
 
 echo "## Build your own custom metrics using snorql" >> ${OUTPUT_DIR}
 cat ./build-custom-metrics.md >> ${OUTPUT_DIR}
+cat ./reference-to-build-custom-metric-for-readme.md >> ${OUTPUT_DIR}
 
 echo "<!-- KOTLIN DOCUMENTATION -->" >> ${OUTPUT_DIR}
 echo "## Kotlin Documentation" >> ${OUTPUT_DIR}
