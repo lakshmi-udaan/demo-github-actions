@@ -9,5 +9,3 @@ fun main(args: Array<String>) {
     val oldest = persons.maxBy { it.age ?: 0 }
     println("The oldest is: $oldest")
 }
-
-// The oldest is: Person(name=Bob, age=29)
